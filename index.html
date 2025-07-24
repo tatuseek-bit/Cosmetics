@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Косметика для вас</title>
+        <meta charset="utf-8">
+        <link rel="manifest" href="manifest.json">
+        <meta name="theme-color" content="#ff4785">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo">С любовью и заботой о вашей коже</div>
+                <div class="slogan">Для ежедневного ухода в любое время года</div>
+                <nav class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Главная</a></li>
+                    <li class="nav-item"><a href="#catalog" class="nav-link">Каталог</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Контакты</a></li>
+                </nav>
+                <div class="benefits">
+                    <div class="benefit-item">Смягчение и увлажение</div>
+                    <div class="benefit-item">Быстрое восстановление кожи</div>
+                </div>
+            </header>
+            
+            <!-- Главная страница -->
+            <section id="home" class="page-section">
+                <div class="main">
+                    <h2>Наши новинки</h2>
+                    
+                    <div class="products">
+                        <div class="product-card">
+                            <img src="krema_0_1.png" alt="Крем ши с маслом" class="product-image">
+                            <div class="product-name">Крем ши с маслом</div>
+                            <div class="product-price">2017 руб</div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="9e07f750ec3d41f1398e9f088e7ac644.jpg" alt="Крем ши с маслом" class="product-image">
+                            <div class="product-name">Набор крем ши с маслом</div>
+                            <div class="product-price">2017 руб</div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="38545f5ae7cce77ba5dc9aa9bc7cdef9.jpg" alt="Крем ши с маслом" class="product-image">
+                            <div class="product-name">Набор скабов ши с маслом</div>
+                            <div class="product-price">2017 руб</div>
+                        </div>
+                    </div>
+                    
+                    <div class="catalog-section">
+                        <p class="catalog-text">Для ежедневного ухода в любое время года</p>
+                        <a href="#catalog" class="catalog-btn">каталог</a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Каталог -->
+            <section id="catalog" class="page-section hidden">
+                <div class="main">
+                    <h2>Наш каталог</h2>
+                    
+                    <div class="products">
+                        <div class="product-card">
+                            <img src="il_1588xN.574290985_8ptj.jpg" alt="Крем ши с маслом" class="product-image">
+                            <div class="product-name">Крем ши с маслом</div>
+                            <div class="product-price">2017 руб</div>
+                            <button class="buy-btn">Купить</button>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="9e07f750ec3d41f1398e9f088e7ac644.jpg" alt="Крем ши с маслом" class="product-image">
+                            <div class="product-name">Набор крем ши с маслом</div>
+                            <div class="product-price">2017 руб</div>
+                            <button class="buy-btn">Купить</button>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="38545f5ae7cce77ba5dc9aa9bc7cdef9.jpg" alt="Крем ши с маслом" class="product-image">
+                            <div class="product-name">Набор скабов ши с маслом</div>
+                            <div class="product-price">2017 руб</div>
+                            <button class="buy-btn">Купить</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="krema_0_1.png" alt="Очищающий гель" class="product-image">
+                            <div class="product-name">Очищающий гель</div>
+                            <div class="product-price">1500 руб</div>
+                            <button class="buy-btn">Купить</button>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="753e8836d62d7d68596bcad80f204fd8.jpg" alt="Тонизирующий лосьон" class="product-image">
+                            <div class="product-name">Тонизирующий лосьон</div>
+                            <div class="product-price">1800 руб</div>
+                            <button class="buy-btn">Купить</button>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="lxiaurbatr8.jpg" alt="Ночной крем" class="product-image">
+                            <div class="product-name">Ночной крем</div>
+                            <div class="product-price">2200 руб</div>
+                            <button class="buy-btn">Купить</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Контакты -->
+            <section id="contacts" class="page-section hidden">
+                <div class="main">
+                    <h2>Наши контакты</h2>
+                    <div class="contact-info">
+                        <p>Телефон: +7 (123) 456-78-90</p>
+                        <p>Email: info@cosmetics.ru</p>
+                        <p>Адрес: г. Москва, ул. Косметическая, д. 25</p>
+                    </div>
+
+                    <section class="contact-form">
+                        <h3 class="form-title">Оставьте свои данные</h3>
+                        <form action="feedback.php" method="POST">
+                            <div class="form-group">
+                                <label for="name">Ваше имя:</label>
+                                <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Электронная почта:</label>
+                                <input type="email" id="email" name="email" required placeholder="example@mail.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Сообщение:</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="Ваше сообщение..."></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Отправить</button>
+                        </form>
+                    </section>
+                </div>
+            </section>
+            
+            <footer>
+                <p>2025 Уход за кожей. Все права защищены.</p>
+            </footer>
+        </div>
+        <script>
+            // Регистрация Service Worker
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('service-worker.js')
+                        .then(function(registration) {
+                            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                        }, function(err) {
+                            console.log('ServiceWorker registration failed: ', err);
+                        });
+                });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+                // Функция для показа выбранного раздела
+                function showSection(sectionId) {
+                    // Проверяем существование секции
+                    const section = document.getElementById(sectionId);
+                    if (!section) return;
+                    
+                    // Скрываем все секции
+                    document.querySelectorAll('.page-section').forEach(section => {
+                        section.classList.add('hidden');
+                    });
+                    
+                    // Показываем нужную секцию
+                    section.classList.remove('hidden');
+                }
+                
+                // Обработка кликов по навигации
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const sectionId = this.getAttribute('href').substring(1);
+                        showSection(sectionId);
+                        history.pushState(null, null, `#${sectionId}`);
+                    });
+                });
+                
+                // Обработка изменения hash в URL
+                function handleHashChange() {
+                    const sectionId = window.location.hash.substring(1) || 'home';
+                    showSection(sectionId);
+                }
+                
+                window.addEventListener('hashchange', handleHashChange);
+                
+                // Проверяем хэш при начальной загрузке
+                handleHashChange();
+            });
+        </script>
+    </body>
+</html>
